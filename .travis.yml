@@ -1,0 +1,29 @@
+sudo: required
+dist: trusty
+
+before_install:
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
+  - sudo apt-get update -qq
+  - pip install --user cpp-coveralls
+
+install:
+  - sudo apt-get -y install qt55[QTPACKAGE]
+  - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+  - chmod a+x ~/bin/repo
+  - git config --global color.ui false
+
+script:
+  - echo "clone dependency repos"
+  - repoURL="https://github.com/${TRAVIS_REPO_SLUG}.git"
+  - branch=${TRAVIS_BRANCH}
+  - manifest="default.xml"
+  - echo "starting repo init for ${repoURL}, branch ${branch}, manifest-file ${manifest}"
+  - repo init -u ${repoURL} -b ${branch} -m ${manifest}
+  - repo sync
+  - ls -la
+  - echo "start build"
+  - source /opt/qt55/bin/qt55-env.sh
+  - /opt/qt55/bin/qmake
+  - make clean
+  - make
+  - ./untitled
