@@ -23,7 +23,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    Logger.h \
-    ModuleA.h \
-    ModuleB.h \
-    ModuleC.h
+        mezorian/DepTest_ModuleA/ModuleA.h \
+        mezorian/DepTest_ModuleB/ModuleB.h \
+        mezorian/DepTest_ModuleC/ModuleC.h \
+        mezorian/DepTest_ModuleA/mezorian/DepTest_Logging/Logger.h \
+        mezorian/DepTest_ModuleB/mezorian/DepTest_Logging/Logger.h \
+        mezorian/DepTest_ModuleC/mezorian/DepTest_Logging/Logger.h \
