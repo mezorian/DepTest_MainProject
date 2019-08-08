@@ -1,6 +1,6 @@
-#include "ModuleA.h"
-#include "ModuleB.h"
-#include "ModuleC.h"
+#include "mezorian/DepTest_ModuleA/ModuleA.h"
+#include "mezorian/DepTest_ModuleB/ModuleB.h"
+#include "mezorian/DepTest_ModuleC/ModuleC.h"
 
 int main() {
     ModuleA a;
