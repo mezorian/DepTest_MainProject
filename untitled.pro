@@ -28,4 +28,4 @@ HEADERS += \
         mezorian/DepTest_ModuleC/ModuleC.h \
         mezorian/DepTest_ModuleA/mezorian/DepTest_Logging/Logger.h \
         mezorian/DepTest_ModuleB/mezorian/DepTest_Logging/Logger.h \
-        mezorian/DepTest_ModuleC/mezorian/DepTest_Logging/Logger.h \
+        mezorian/DepTest_ModuleC/mezorian/DepTest_Logging/Logger.h 
