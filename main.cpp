@@ -3,9 +3,9 @@
 #include "mezorian/DepTest_ModuleC/ModuleC.h"
 
 int main() {
-    ModuleA a;
-    ModuleB b;
-    ModuleC c;
+    submodule_a::ModuleA a;
+    submodule_b::ModuleB b;
+    submodule_c::ModuleC c;
     a.doSmth();
     b.doSmth();
     c.doSmth();
