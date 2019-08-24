@@ -7,6 +7,7 @@ Dependency Test Main Project
 
  1. Installation of google repo tool
  2. Installation of qt
+ 3. Installation of python3-pip and gitpython
 
 ## Setup / Clone & Compile 
 
@@ -22,7 +23,7 @@ git clone ${repoURL}
 cd ${repoName}
 
 # download all depency repos
-git clone git@github.com:mezorian/EasyDepend.git
+git clone https://github.com/mezorian/EasyDepend.git
 cp EasyDepend/*.py .
 python3 example.py
 
