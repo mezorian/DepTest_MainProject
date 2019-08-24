@@ -22,8 +22,9 @@ git clone ${repoURL}
 cd ${repoName}
 
 # download all depency repos
-repo init -u ${repoURL} -b ${branch} -m ${manifest}
-repo sync
+git clone git@github.com:mezorian/EasyDepend.git
+cp EasyDepend/*.py .
+python3 example.py
 
 # build
 source /opt/qt55/bin/qt55-env.sh
