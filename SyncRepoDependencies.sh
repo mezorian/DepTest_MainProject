@@ -35,8 +35,7 @@ cat default.xml | grep "<project name=" | while read -r line ; do
     	echo "projectName $projectName , branch $branch"
 
 	# go into each project directory and repo sync dependency repos
-        pushd
-	cd ${projectName}
+        pushd ${projectName}
 	repoURL="https://github.com/${projectName}.git"
 	branch="${branch}"
 	manifest="default.xml"
