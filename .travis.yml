@@ -19,7 +19,7 @@ script:
   - repoURL="https://github.com/${TRAVIS_REPO_SLUG}.git"
   - branch=${TRAVIS_BRANCH}
   - manifest="default.xml"
-  - git clone git@github.com:mezorian/EasyDepend.git
+  - git clone https://github.com/mezorian/EasyDepend.git
   - cp EasyDepend/*.py .
   - python3 example.py
   - ls -la
