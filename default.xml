@@ -3,7 +3,7 @@
 <manifest>
 	<remote  name="github" fetch="https://github.com" />
 	<default revision="refs/heads/master" remote="github" sync-j="4" />
-	<project name="mezorian/DepTest_ModuleA" remote="github" revision="refs/tags/v1.0" />
-  	<project name="mezorian/DepTest_ModuleB" remote="github" revision="refs/tags/v1.0" />
-  	<project name="mezorian/DepTest_ModuleC" remote="github" revision="refs/tags/v1.0" />
+	<project name="mezorian/DepTest_ModuleA" remote="github" revision="latest_dependencies" />
+  	<project name="mezorian/DepTest_ModuleB" remote="github" revision="latest_dependencies" />
+  	<project name="mezorian/DepTest_ModuleC" remote="github" revision="latest_dependencies" />
 </manifest>
